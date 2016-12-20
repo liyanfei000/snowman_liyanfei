@@ -29,15 +29,15 @@ function draw() {
   background(196,230,255);
   imageMode(CENTER)
   image(snowland,180,550,snowland.width/4, snowland.height/4);
-  var x = 300;
-  var x = map(volume,0,1,340,280);
+  //var x = 300;
+  var x = map(volume,0,1,340,300);
     
   push();
   imageMode(CENTER)
   image(snowman,175,x,snowman.width/3, snowman.height/3);
   pop();
   push();  //Start with transformations
-  var size = map(volume,0,1,1,20);
+  var size = map(volume,0,1,1,10);
     noStroke();
     fill(0);
   ellipse(177,x-32,size,size+2);
